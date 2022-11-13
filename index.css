@@ -1,0 +1,167 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+main{
+display: flex;
+}
+section.left{
+height: 100vh;
+width: auto;
+overflow: hidden;
+}
+section.left > img{
+    width: 100%;
+    height: 100%;
+}
+section.right {
+    margin-left: -16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color:white;
+    border: solid white;
+    border-radius: 25px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .inputWrapper {
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 134.18%;
+    color: #003D61;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0.5cm;
+  }
+  .i4{
+    display: none;
+  }
+  .i2{
+  display: none;
+  }
+  
+  .inputWrapper > input {
+    padding: 16px;
+    border: 1px solid #003D61;
+    border-top: none;
+    border-right: none;
+    
+  }
+  .Down{
+    font-family: 'Inter';font-size: 16px;  
+    display: flex;
+    gap: 5px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    position:relative ;
+}
+  .Down > .term  {
+    color: #ED2980;
+  }
+  .Down > .privacy{
+    color: #ED2980;
+  }
+  .under > .log{
+    color: #ED2980;
+  }
+  .under{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Inter';font-size: 16px; 
+    display: flex;
+    margin: 16px;
+  }
+  .logos{
+    width: 7cm;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 16px;
+    
+  }
+  button{
+    display: none;
+    color: white;
+    background-color: #003D61;
+    width: 327px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius:6px ;
+  }
+  .extra2{
+    color: #828282;
+    display: none;
+  }
+  .extra2 > u {
+    color:#ED2980;
+  }
+
+  /* here is your css for media  */
+  
+    @media (max-width:375px){
+      main{
+      flex-direction: column;
+      width: 812px;
+      justify-content: space-between;
+      }
+      section.right{
+        margin-top: -16px;
+        gap: 16px;
+      }
+      .inputWrapper{
+        color: #B8B8B8;
+        font-size: 14px;
+        margin: 10px;
+      }
+      .inputWrapper > input{
+        border-left: none;
+      }      
+      ::placeholder{
+        color: #003D61;
+      }
+      .i2{
+        display: flex;
+      }
+      button{
+        display: flex;
+      }
+      .extra2{
+        display: flex;
+      }
+      .logos{
+        justify-content: space-evenly;
+      }
+      .i4{
+        display: flex;
+        
+      }
+      .i5{
+        display: none;
+      }
+
+      .I4{
+        color:#ED2980;
+      }
+      .i3{
+        display: none;
+      }
+      .i1{
+      display: none;
+      }
+      .under{
+      display: none;
+      }
+      .Down{
+      display: none;
+      }
+   }
